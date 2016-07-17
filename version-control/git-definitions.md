@@ -11,4 +11,4 @@ A commit is a message to yourself and other coders telling them what you did to 
 * What is a merge conflict?
 A merge conflict is when multiple people are branching off the master code and attempt to merge their code back to the master but they run into problems and git comes up with the error merge conflict. What is happeining is that git is automatically trying to merge as much as it can and when it runs into something it can't merge it labels it as a merge conflict. 
 
-Extra Credit: What is a bobolink?
+Extra Credit: What is a bobolink??
