@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> My Bobolink webpage </title>
+	</head>
+	<body>
+	This is a website!
+		<h1 align=center> Ghosts of the covenant </h1>
+<div id="nav"><ul>
+	<li><a href=www.ghostsofthecovenant.com> Home</a></li>
+	<li><a href=http://ghostsofthecovenant.gamerlaunch.com/forums/index.php?gid=508262&sid=bdeac3be6b95cdb9ee9c12fc7804cf28> Forums</a></li>
+
+	</ul>
+</div>
+<p><strong> Our creed is silent, humble, professionals</strong></p>
+	<img src=http://file3.guildlaunch.net/508262/Ghost1.jpg alt="Ghost">
+	<p> Our Rules <p>
+		<ol>
+			<li> No disrespect </li>
+			<li> Pay it forward, help your fellow ghost </li>
+			<li> 17 and over </li>
+			<li> Daggerfall Only</li>
+		</ol>
+		<em> Ghooooosts! </em>
+
+
+	</body>
+</html>
