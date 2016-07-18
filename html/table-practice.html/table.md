@@ -49,7 +49,7 @@
 		<tr>
 			<td rowspan="2">Go Islanders! </td>
 			<td> &nbsp; </td>
-			<td> !!! </td>
+			<td> !!!! </td>
 		</tr>
 			<td> L </td>
 			<td> G</td>
