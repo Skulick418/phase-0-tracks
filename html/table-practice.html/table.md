@@ -26,5 +26,37 @@
 		</tr>
 	</table> 
 
+	<table border=1> 
+		<tr>
+			<th> Player </th> 
+			<th> Position </th>
+			<th> Team </th>
+		</tr>
+		<tr>
+			<td> John Tavares </td>
+			<td> Center </td>
+			<td> Islanders </td>
+		</tr>
+		<tr> 
+			<td> Rick DiPietro </td>
+			<td colspan="2"> N/A </td>
+		</tr>
+		<tr> 
+			<td> Brock Nelson </td>
+			<td> Left wing, Right wing </td>
+			<td> Islanders </td>
+		</tr>
+		<tr>
+			<td rowspan="2">Go Islanders! </td>
+			<td> &nbsp; </td>
+			<td> !!! </td>
+		</tr>
+			<td> L </td>
+			<td> G</td>
+			
+	</table>
+
+
+
 	</body>
 </html>
