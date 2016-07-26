@@ -2,22 +2,27 @@
 <html>
 <head>
 <style>
-#octopus {
-	position:relative;
-	margin-right:auto;
-	margin-left:auto;
-	padding-top: 200px;
 
-}
-#glasses {
-	position: absolute;
-	z-index:1;
+.Octopus_Outfit {
+	position:relative;
 }
 
 #hat {
+	position absolute;
+	top: 0px;
+	left: 15px;
+}
+
+#glasses {
+	position:absolute;
+	top:20px;
+	left: 15px;
+}
+
+#octopus {
 	position: absolute;
-	z-index:1;
-	
+	top: 25px;
+	left: 15px;
 }
 
 
@@ -25,15 +30,19 @@
 </style>
 </head>
 <body>
-	<div id="hat">
-		<img src="hat.png">
+	<div class="Octopus_Outfit">
+		<div id="hat">
+			<img src="hat.png">
+		</div>
+		<div id="octopus">
+			<img src="octopus.png">
+		</div>
+		<div id="glasses">
+			<img src="glasses.png">
+		</div>
 	</div>
-	<div id="octopus">
-		<img src="octopus.png">
-	</div>
-	<div id="glasses">
-		<img src="glasses.png"> 
-	</div>
+
+
 
 
 </body>
