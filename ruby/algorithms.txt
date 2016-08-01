@@ -1,0 +1,61 @@
+
+Calling for elevator and selecting floor 
+
+- Move towards elevator doors and attempt to enter
+	- If doors are closed check elevator call button 
+		- If button is already called for wait
+		- If button isn't called for press button
+	- If doors are open step into elevator
+- Once inside elevator ask user "Which floor would you prefer?"
+	- If given response from user select the floor the user has chosen 
+		- Scan panel next to elevator doors for corresponding number to the users input.
+			- If number is there select it
+			- If number is not there say "I am sorry that floor isn't avaliable" and repeat sequence from line 6 asking "Which floor would you prefer?"
+	- If not given data wait for user data 
+- Select floor and wait for elevators to doors to open on corresponding door to users data
+	- If door opens on another floor outside of users data do not leave elevator 
+- Once doors open on proper floor leave elevator and wait for future user data  
+
+
+Brushing Teeth
+
+- Approach sink 
+- Pick up toothbrush
+	- Move hands towards toothbrush and grasp it
+		- If there is no toothbrush look in toothbrush drawer and select
+- Put toothbrush under sink faucet  
+- Turn cold water on
+	- Move hand over right faucet handle push clockwise 
+- Let toothbrush get wet
+- Turn cold water off
+	- Move hand over right faucet handle push counter clockwise 
+- Grap toothpaste 
+- Open toothpaste 
+	- Twist top off 
+- Put toothpaste on to toothbrush
+-Put toothpaste down
+- Close toothpaste
+	-Twist top back on
+- Put toothbrush in mouth and brush
+	- Move hand back and forth with head of brush touching teeth 
+- Every 25 seconds until two minutes 
+	- Move toothbrush to different part of mouth 
+- At two minutes take tooth brush out of mouth
+- Spit into sink
+-Turn cold water on
+	- Move hand over right faucet handle push clockwise 
+- Rinse mouth out
+	- Move mouth over sink faucet
+		- Drink water 
+		- Spit 
+- Put toothbrush under sink faucet
+	- Let toothbrush get wait until five seconds is up
+- At five seconds put toothbrush away
+	- Put toothbrush in toothbrush.holder 
+-Turn cold water off
+	- Move hand over right faucet handle push counter clockwise
+- Leave bathroom and continue with day 
+	- If it is night time go to sleep
+	-Otherwise: 
+		- Proceed with activities before brushing teeth.
+  
