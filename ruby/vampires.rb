@@ -1,3 +1,6 @@
+ puts "How many employees will be processed?"
+ amount = gets.chomp.to_i
+ until amount == 0
  	
 
 
@@ -43,18 +46,36 @@
 		puts "Please respond Y or N, case sensitive"
 	end
 
-secret_word = "sunshine"
-user_input = ""
-while user_input !=secret_word 
-	puts "Do you have any allergies? Type done when finished"
-	user_input = gets.chomp
+	phrase_1 = "sunshine"
+	phrase_2 = "done"
+	user_input = ""
 
-	
-	if user_input == "sunshine"
-		allergies = false
-	else
-		allergies = true
-	end
+until user_input == phrase_1 || user_input == phrase_2
+	puts "Please list any allergies you have one by one. Type done when finished"
+	user_input = gets.chomp
+end
+if user_input == "sunshine"
+	allergies = false
+elsif user_input == "done"
+	allergies = true
+end
+amount -= 1
+
+if !name 
+	puts "Defintely a vampire"
+elsif !allergies 
+	puts "Probably a vampire"
+elsif years && (food || insurance)
+	puts "Proably not a vampire"
+elsif !years && !(food || insurance) || !allergies
+		puts "Probably a vampire"
+elsif !years  && !food  && !insurance 
+		puts "Almost certainly a vampire."
+else
+		puts "Results inconclusive"
+end 
+
+puts "Next employee"
 
 end 
 
@@ -71,20 +92,6 @@ end
 	
 
 
-	
-	if years && (food || insurance)
-		puts "Proably not a vampire"
-	elsif !years && !(food || insurance)
-		puts "Probably a vampire"
-	elsif !years  && !food  && !insurance 
-		puts "Almost certainly a vampire."
-	elsif !name 
-		puts "Definitely a vampire."
-	elsif !allergies 
-		"Probably a vampire."
-	else
-		puts "Results inconclusive"
-	end 
 
 
 
