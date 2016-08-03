@@ -45,8 +45,8 @@ until amount == 0
 
 	until user_input == phrase_1 || user_input == phrase_2
 
-	puts "Please list any allergies you have one by one. Type done when finished"
-	user_input = gets.chomp
+		puts "Please list any allergies you have one by one. Type done when finished"
+		user_input = gets.chomp
 
 	end
 	
@@ -74,7 +74,7 @@ until amount == 0
 		puts "Results inconclusive"
 		end
 
-	puts "Next employee"
+	
 
 end 
 
