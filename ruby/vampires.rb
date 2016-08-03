@@ -3,78 +3,78 @@ amount = gets.chomp.to_i
  
 until amount == 0
  	
-puts "What is your name?"
-input = gets.chomp 
-	if input == "Drake Cula" && "Tu Fang"
+	puts "What is your name?"
+	input = gets.chomp 
+		if input == "Drake Cula" && "Tu Fang"
 		name = false
-	else 
+		else 
 		name = true
-	end
+		end
 	
-puts "How old are you? What year were you born?"
-input = gets.chomp
-	if input == 0 
+	puts "How old are you? What year were you born?"
+	input = gets.chomp
+		if input == 0 
 		years = false
-	else
+		else
 		years = true
-	end
+		end
 
-puts "Our company cafeteria serves garlic bread. Should we order some for you? (Y/N)"
-input = gets.chomp 
-	if input == "Y"
+	puts "Our company cafeteria serves garlic bread. Should we order some for you? (Y/N)"
+	input = gets.chomp 
+		if input == "Y"
 		food = true
-	elsif input == "N"
+		elsif input == "N"
 		food = false
-	else
+		else
 		puts "Please respond Y or N, case sensitive."
-	end
+		end
 
-puts "Would you like to enroll in the company's health insurance? (Y/N)"
-input = gets.chomp
-	if input == "Y"
+	puts "Would you like to enroll in the company's health insurance? (Y/N)"
+	input = gets.chomp
+		if input == "Y"
 		insurance = true
-	elsif input == "N"
+		elsif input == "N"
 		insurance = false
-	else 
+		else 
 		puts "Please respond Y or N, case sensitive"
+		end
+
+	phrase_1 = "sunshine"
+	phrase_2 = "done"
+	user_input = ""
+
+	until user_input == phrase_1 || user_input == phrase_2
+
+	puts "Please list any allergies you have one by one. Type done when finished"
+	user_input = gets.chomp
+
 	end
-
-phrase_1 = "sunshine"
-phrase_2 = "done"
-user_input = ""
-
-until user_input == phrase_1 || user_input == phrase_2
-
-puts "Please list any allergies you have one by one. Type done when finished"
-user_input = gets.chomp
-
-end
 	
-	if user_input == "sunshine"
-	allergies = false
-	elsif user_input == "done"
-	allergies = true
-	end
-amount -= 1
+		if user_input == "sunshine"
+		allergies = false
+		elsif user_input == "done"
+		allergies = true
+		end
 
-	if !name 
-	puts "Defintely a vampire"
-	elsif !allergies 
-	puts "Probably a vampire"
-	elsif !years  && !food  && !insurance 
-		puts "Almost certainly a vampire."
-	elsif !years && !(food && insurance) 
+	amount -= 1
+
+		if !name 
+		puts "Defintely a vampire"
+		elsif !allergies 
 		puts "Probably a vampire"
-	elsif years && (food || insurance)
-	puts "Proably not a vampire"
-
-	else
-	puts "Results inconclusive"
-	end
+		elsif !years  && !food  && !insurance 
+		puts "Almost certainly a vampire."
+		elsif !years && !(food && insurance) 
+		puts "Probably a vampire"
+		elsif years && (food || insurance)
+		puts "Proably not a vampire"
+		else
+		puts "Results inconclusive"
+		end
 
 	puts "Next employee"
 
-	end 
+end 
 
 
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
