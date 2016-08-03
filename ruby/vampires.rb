@@ -12,7 +12,7 @@ until amount == 0
 		end
 	
 	puts "How old are you? What year were you born?"
-	input = gets.chomp
+	input = gets.chomp.to_i
 		if input == 0 
 		years = false
 		else
@@ -64,7 +64,9 @@ until amount == 0
 		puts "Probably a vampire"
 		elsif !years  && !food  && !insurance 
 		puts "Almost certainly a vampire."
-		elsif !years && !(food && insurance) 
+		elsif !years && !food
+		puts "Probably a vampire"
+		elsif !years && !insurance
 		puts "Probably a vampire"
 		elsif years && (food || insurance)
 		puts "Proably not a vampire"
