@@ -2,7 +2,8 @@ puts "How many employees will be processed?"
 amount = gets.chomp.to_i
  
 until amount == 0
- 	
+ 
+ 	#Driver Code	
 	puts "What is your name?"
 	input = gets.chomp 
 		if input == "Drake Cula" && "Tu Fang"
