@@ -2,7 +2,8 @@ puts "How many employees will be processed?"
 amount = gets.chomp.to_i
  
 until amount == 0
- 	
+ 
+ 	#Driver Code	
 	puts "What is your name?"
 	input = gets.chomp 
 		if input == "Drake Cula" && "Tu Fang"
@@ -13,31 +14,41 @@ until amount == 0
 	
 	puts "How old are you? What year were you born?"
 	input = gets.chomp.to_i
-		if input == 0 
+		if input < 1800 
 		years = false
 		else
 		years = true
 		end
-
-	puts "Our company cafeteria serves garlic bread. Should we order some for you? (Y/N)"
-	input = gets.chomp 
-		if input == "Y"
-		food = true
-		elsif input == "N"
-		food = false
-		else
-		puts "Please respond Y or N, case sensitive."
-		end
-
-	puts "Would you like to enroll in the company's health insurance? (Y/N)"
-	input = gets.chomp
-		if input == "Y"
-		insurance = true
-		elsif input == "N"
-		insurance = false
-		else 
-		puts "Please respond Y or N, case sensitive"
-		end
+	valid_input = false
+	until valid_input 
+		puts "Our company cafeteria serves garlic bread. Should we order some for you? (Y/N)"
+		input = gets.chomp 
+			if input == "Y"
+			food = true
+			valid_input = true
+			elsif input == "N"
+			food = false
+			valid_input = true
+			else
+			puts "Please respond Y or N, case sensitive."
+			valid_input = false
+			end
+	end
+	valid_input = false
+	until valid_input 
+		puts "Would you like to enroll in the company's health insurance? (Y/N)"
+		input = gets.chomp
+			if input == "Y"
+			insurance = true
+			valid_input = true
+			elsif input == "N"
+			insurance = false
+			valid_input = true
+			else 
+			puts "Please respond Y or N, case sensitive"
+			valid_input = false
+			end
+	end
 
 	phrase_1 = "sunshine"
 	phrase_2 = "done"
