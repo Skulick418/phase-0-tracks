@@ -1,3 +1,59 @@
-body {
-	background-color:red;
+header {
+  margin: auto;
+  width: 80%;
+  border: solid 1px black;
+  padding: 10px 15px; 
+  background-image: url("http://orig09.deviantart.net/a7dc/f/2011/325/5/a/textures___old_paper_by_emaggz-d4gvxp6.jpg");
+  margin-bottom: 10px;
+ 
+ }
+ 
+h1 {
+  font-family: helvetica;
+  text-shadow: 2px 2px lightgrey;
+ 
+
 }
+ 
+ 
+ 
+ .column-1 { 
+   float: left;
+   background-color:beige;
+   width: 45%;
+   padding: 10px 15px;
+   font-family: helvetica;
+   
+ }
+ 
+ .column-1 h2 {
+   color:pink;
+ }
+ 
+ .column-2 {
+   float: right;
+   width: 45%;
+   background-color:beige;
+   padding: 10px 15px;
+   font-family: helvetica;
+ }
+ 
+ footer {
+   float: left; 
+   width: 100%;
+   background-color: orange;
+   padding: 5px 10px;
+   
+ }
+
+header, footer {
+  background-color:green;
+}
+
+a:hover {
+  color: grey; 
+}
+
+
+ 
+ 
