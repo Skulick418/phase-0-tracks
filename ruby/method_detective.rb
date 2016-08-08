@@ -4,7 +4,7 @@
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
 
-#puts "iNvEsTiGaTiOn".("InVeStIgAtIoN")
+puts "iNvEsTiGaTiOn".tr("iNvEsTiGaTiOn", "InVeStIgAtIoN")
 # => “InVeStIgAtIoN”
 
 puts "zom".insert(2, "o")
