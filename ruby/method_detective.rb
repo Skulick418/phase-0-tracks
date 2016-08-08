@@ -22,18 +22,18 @@ puts "the usual".replace("the usual suspects")
 puts " suspects".replace("the usual suspects")
 # => "the usual suspects"
 
-puts "The case of the disappearing last letter"
+puts "The case of the disappearing last letter"[0..38]
 # => "The case of the disappearing last lette"
 
-# "The mystery of the missing first letter".<???>
+puts "The mystery of the missing first letter"[1..39]
 # => "he mystery of the missing first letter"
 
-puts "Elementary,    my   dear        Watson!".strip 
+puts "Elementary,    my   dear        Watson!".squeeze(" ") 
 # => "Elementary, my dear Watson!"
 
 puts "z".ord
 # => 122 
 # 122 is the corresponding integer ordinal to z
 
-"How many times does the letter 'a' appear in this string?".index(o)
+puts "How many times does the letter 'a' appear in this string?".index("a")
 # => 4
