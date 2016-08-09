@@ -16,7 +16,7 @@ sports = ["gymnastics", "football", "polo", "diving", "swimming"]
 sports.slice!(2)
 p sports
 
-
+sports.slice!(2)
 sports.insert(2, "running")
 p sports
 
