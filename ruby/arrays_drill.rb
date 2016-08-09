@@ -14,13 +14,14 @@ puts returns_array(1, 3, 5)
 
 sports = ["gymnastics", "football", "polo", "diving", "swimming"]
 sports.slice!(2)
+p sports
 
 
 sports.insert(2, "running")
-puts sports
+p sports
 
 sports.shift
-puts sports
+p sports
 
 sports.include?("running")
   if true
@@ -33,4 +34,4 @@ sports.include?("running")
 medals = ["gold", "silver", "bronze"]
 
 olmypics = sports|medals
-puts olmypics
+p olmypics
