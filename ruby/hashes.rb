@@ -134,6 +134,7 @@ client_form = {}
 			end
 
 		p client_form # Print latest version of hash/client form. Exit. 
+		puts "Thank you! Goodbye."
 				
 					
 
