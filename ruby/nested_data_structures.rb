@@ -1,4 +1,4 @@
-]School_room = {
+School_room = {
 	'Chalk Board' => [
 		'chalk',
 		'eraser',
