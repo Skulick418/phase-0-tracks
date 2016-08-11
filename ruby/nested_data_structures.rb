@@ -38,4 +38,7 @@ School_room = {
 
 }
 
-School_room['Teachers Desk'][2]
+puts School_room['Teachers Desk'][2]
+puts School_room['Desk 3'][0]
+School_room['Teachers Desk'].push('Student note')
+puts School_room['Teachers Desk']
