@@ -1,3 +1,39 @@
+def user_name_change(user_input)
+	user_input = user_input.chars.reverse!.join('')
+	user_input = user_input.downcase.chars
+	exceptions = ['a','e','i','o','u','a']
+	new_user_name = []
+	user_input.map do |letters|
+		if exceptions.include?(letters)
+			exceptions_index = exceptions.index(letters) 
+			letters = exceptions[exceptions_index + 1]
+			new_user_name << letters
+		elsif letters == " "
+			new_user_name << letters
+		else 
+			letters = letters.next!
+			new_user_name << letters
+		end
+	end
+	new_user_name = new_user_name.join('')
+	new_user_name
+end
+
+new_user_name_list = []
+puts "Welcome"
+valid_end = false
+until valid_end == true
+	puts "Please insert user name for encryption. Type end when finished"
+	name = gets.chomp
+	if name.downcase == "end"
+		valid_end = true
+	else 
+		puts "New user name is #{user_name_change(name)}"
+		new_user_name_list.store(user_name_change)
+	end
+end
+
+#Old code using if logic
 # def encryptt(user_name)
 # 	alphabet = "abcdefghijklmnopqrstuvwxyz"
 # 	new_user_name = ""
@@ -45,40 +81,4 @@
 # end
 # end
 
-
-
-def user_name_change(user_input)
-	user_input = user_input.chars.reverse!.join('')
-	user_input = user_input.downcase.chars
-	exceptions = ['a','e','i','o','u','a']
-	new_user_name = []
-	user_input.map do |letters|
-		if exceptions.include?(letters)
-			exceptions_index = exceptions.index(letters) 
-			letters = exceptions[exceptions_index + 1]
-			new_user_name << letters
-		elsif letters == " "
-			new_user_name << letters
-		else 
-			letters = letters.next!
-			new_user_name << letters
-		end
-	end
-	new_user_name = new_user_name.join('')
-	new_user_name
-end
-
-new_user_name_list = []
-puts "Welcome"
-valid_end = false
-until valid_end == true
-	puts "Please insert user name for encryption. Type end when finished"
-	name = gets.chomp
-	if name.downcase == "end"
-		valid_end = true
-	else 
-		puts "New user name is #{user_name_change(name)}"
-		new_user_name_list.store(user_name_change)
-	end
-end
 
