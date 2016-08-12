@@ -33,7 +33,7 @@ until valid_end == true
 	end
 end
 
-#Old code using if logic
+# Old code using if logic
 # def encryptt(user_name)
 # 	alphabet = "abcdefghijklmnopqrstuvwxyz"
 # 	new_user_name = ""
@@ -65,7 +65,8 @@ end
 # 			new_user_name << name_change
 # 		end
 # 	end
-# 		new_user_name
+# 		new_user_name_1 = new_user_name.chars.reverse!.join('')
+# 		new_user_name_1
 # end
 
 # p encryptt ('felicia torres')
@@ -74,7 +75,7 @@ end
 # valid_end = false
 # until valid_end == true
 # 	puts "Please insert user name for encryption"
-# 	name = gets.chomp
+# 	name = gets.chomp.downcase
 # 	if name.downcase == "end"
 # 		valid_end = true
 # 	else puts "New user name is #{encryptt(name)}"
