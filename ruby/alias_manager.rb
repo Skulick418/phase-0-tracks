@@ -49,9 +49,9 @@ def user_name_change(user_input)
 	new_user_name #
 end
 
-# new_user_name_list = []
+new_user_name_list = []
 puts "Welcome"
-puts "Please insert name for encryiption"
+puts "Please insert name for encryption. Type end when finished"
 while true 
 name = gets.chomp.downcase
 if name.downcase == "end"
@@ -59,7 +59,11 @@ if name.downcase == "end"
 else 
 	puts "Here is your new user name comrade #{user_name_change(name)}." #Use method and put gets.chomp as the parameter and what will be called for inbetween the pipes.
 end
+new_user_name_list << user_name_change(name)
+
 end
+puts "Here is the record of new names"
+p new_user_name_list
 
 # Old code using if logic. Used it as a referene while coding and a reminder of what a non condensed code looks like.
 # def encryptt(user_name)
