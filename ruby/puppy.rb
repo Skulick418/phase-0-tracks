@@ -10,3 +10,12 @@
 # 	Digs: Yes 
 # 	Barks: Minimal 
 #   Learn Tricks: Yes 
+
+class Puppy  
+end
+
+duchess = Puppy.new 
+molly = Puppy.new
+dax = Puppy.new 
+
+dax.class
