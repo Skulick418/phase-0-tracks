@@ -20,6 +20,11 @@ class Puppy
   
   def friend(dog_name)
     puts "#{dog_name} is my friend"
+    
+  def initialize 
+    puts "Initializing new puppy instance ..."
+  end 
+
 end 
 end 
 
@@ -35,3 +40,30 @@ dax.roll_over
 dax.dog_years(2)
 
 dax.friend('spot')
+
+class Sports 
+   
+    def initialize 
+      puts "Initializing new puppy instance ..."
+      end 
+      
+      def favorite_sport(choice)
+        puts "#{choice} is my favorite sport."
+      end 
+      
+      def least_favorite_sport(choice2)
+        puts "#{choice2} is my least favorite sport" 
+      end 
+        
+end 
+
+sports_list = []
+
+50.times do 
+  sports_list.push(Sports.new)
+end 
+
+sports_list.each do |index|
+  index.favorite_sport('Hockey')
+  index.least_favorite_sport('Golf')
+end 
