@@ -1,4 +1,6 @@
-class Santa 
+class Santa
+attr_reader :ethnicity, :age 
+attr_accessor :gender  
 
 	def initialize (gender, ethnicity)
 		puts "Initalizing Santa instance"
@@ -41,30 +43,45 @@ class Santa
 		@gender = new_gender
 	end 
 
-	def ethnicity 
-		@ethnicity 
-	end 
+	# def ethnicity 
+	# 	@ethnicity 
+	# end 
+
+	# def age 
+	# 	@age 
+	# end 
 end
 
+santa_gender = ["female", "male", "bigender", "undecidied", "gorflon (alien male)", "garflan (alien female)"]
+santa_ethnicities = ["agender", "black","white", "chinese", "japanese","none given", "alien"]
 
+20.times do |santa_instance|
+	santa_number = santa_instance + 1
+	puts "Santa number #{santa_number}"
+	new_santa = Santa.new(santa_gender.sample, santa_ethnicities.sample)
+	new_santa.celebrate_birthday(rand(140))
+	p new_santa
+end
+# new_santa2 = Santa.new('male',"chinese")
+# 	new_santa2.get_mad_at = "Dancer"
+# 	p new_santa2
+# santas = []
+# puts santas << Santa.new("agender", "black")
 
-santas = []
-puts santas << Santa.new("agender", "black")
-
-santa1 = Santa.new("male", "white")
-santa1.celebrate_birthday(20)
-age = santa1.celebrate_birthday(20)
-puts "Santa is now #{age}"
+# santa1 = Santa.new("male", "white")
+# santa1.celebrate_birthday(20)
+# age = santa1.celebrate_birthday(20)
+# puts "Santa is now #{age}"
 
  
 
-santa1.get_mad_at = "Vixen"
-p santa1
+# santa1.get_mad_at = "Vixen"
+# p santa1
 
-santa1.gender_change = "Unicorn"
+# santa1.gender_change = "Unicorn"
 
 
-p santa1
+# p santa1
 
 
 
