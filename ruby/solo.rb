@@ -45,6 +45,10 @@ def get_some_air_question
 			puts "Go big or go home!"
 		end
 end 
+
+def gnarly 
+	puts "That was gnarly!!!!"
+end 
 def front_foot
 	if @left_foot 
 		@left_foot = true 
