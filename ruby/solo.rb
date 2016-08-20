@@ -1,6 +1,6 @@
 #Form that will ask user their preference for what snowboard they want built
 # User has input and writeability on all things except flex and bindings 
-# Create a class with paramenets needed for each accessor I will be using
+# Create an initiliaze class with parameters needed for each accessor I will be using
 # Assign variables in initialize 
 # Create a description method to be used at the end 
 # Create user interface with loop do break will be quit 
