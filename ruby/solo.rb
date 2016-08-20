@@ -1,3 +1,12 @@
+#Form that will ask user their preference for what snowboard they want built
+# User has input and writeability on all things except flex and bindings 
+# Create a class with paramenets needed for each accessor I will be using
+# Assign variables in initialize 
+# Create a description method to be used at the end 
+# Create user interface with loop do break will be quit 
+# Ask user for their information
+# Collect user information into a hash push that hash into the class then into an array. 
+# Print all information given using .each do method on array. 
 class Snowboard_Build 
 	attr_reader :bindings,:flex   
 	attr_accessor :front_foot, :style,:name, :height, :company
@@ -13,19 +22,18 @@ class Snowboard_Build
 	end 
 
 def description
-	puts "Name:" + @name 
+	puts "Name:" +  @name 
 	puts "Height" + @height
 	puts "Style" + @style 
 	puts "Company" + @company 
-	puts "Left Foot" + @left_foot
-	puts "Bindings" + @bindings
+	puts "Bindings" + @bindings.to_s 
 	puts "Board Flex" + @flex 
-	puts "New board has been created"
-	if @left_foot = true 
-		puts "#{@name} needs the left binding infront"
-	elsif @left_foot = false 
+	if @left_foot 
 		puts "#{@name} needs the right binding infront"
+	else 
+		puts "#{@name} needs the left binding infront"
 	end
+	puts "New board has been created"
 end 
 
 def get_some_air_question
@@ -98,6 +106,9 @@ loop do
 	until left_answer == "yes" || left_answer == "no" 
 		puts "Invalid response please choose yes or no"
 		left_answer = gets.chomp.downcase
+	# until front_foot_true_false(left_answer)
+	# 	puts "Invalid response choose Yes or No"
+	# 	left_answer = gets.chomp.downcase.
 	end 
 	left_answer = front_foot_true_false(left_answer)
 	snowboard_form[:front_foot] = left_answer 
@@ -108,12 +119,15 @@ loop do
 	p snowboards
 end 
 
-p snowboards 
-# snowboards.each do |snowboard|
-# 	puts "/nSnowboard creation" + (snowboards.index(snowboard) + 1).to_s
-# 		snowboard.description
-# 	end 
 
+
+
+p snowboards 
+
+snowboards.each do |x|
+	puts "Snowboard creation" + (snowboards.index(x) +1).to_s
+	x.description
+end
 
 
 
