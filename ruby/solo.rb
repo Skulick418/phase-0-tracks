@@ -108,8 +108,11 @@ loop do
 	p snowboards
 end 
 
-
-
+p snowboards 
+# snowboards.each do |snowboard|
+# 	puts "/nSnowboard creation" + (snowboards.index(snowboard) + 1).to_s
+# 		snowboard.description
+# 	end 
 
 
 
