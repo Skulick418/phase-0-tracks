@@ -7,9 +7,9 @@ class Snowboard_Build
 		@height = height
 		@style = style 
 		@company = company
+		@left_foot = left_foot 
 		@bindings = 2 
 		@flex = "middle"
-		@left_foot = left_foot 
 	end 
 
 def description
@@ -46,19 +46,27 @@ def front_foot
 end
 end 
 
+def front_foot_true_false(string)
+	if string == "yes"
+		true 
+	else
+		false
+	end
+end 
+
 # p test_board = Snowboard_Build.new("Sam", "6'3", "Park", "Right", "Burton")
 
 # test_board.get_some_air_question
-
+snowboards = []
 loop do 
 	puts "Hello what is your name? (type quit to enter)."
 	name_or_break = gets.chomp.downcase
 	break if name_or_break == "quit"
-	snowboard_form = []
+	snowboard_form = {}
 	snowboard_form[:name] = name_or_break
 
 	puts "Please enter your height"
-	height = gets.chomp
+	height = gets.chomp.to_s
 	snowboard_form[:height] = height 
 
 	puts "Please pick your riding style. Choices: Park, Downhill."
@@ -71,6 +79,38 @@ loop do
 		else 
 			snowboard_form[:style] = "Invalid choice"
 		end 
+	
 	puts "Please pick which company of board you would prefer. (Burton, Forum, Ride)."
 	board_choice = gets.chomp.downcase
+	# snowboard_form[:company] = board_choice 
+		if board_choice == "burton"
+			snowboard_form[:company] = board_choice 
+		elsif board_choice == "forum"
+			snowboard_form[:company] = board_choice
+		elsif board_choice == "Ride"
+			snowboard_form[:company] = board_choice
+		else 
+			snowboard_form[:company] = "Invalid Response"
+		end 
+
+	puts "Are you a lefty? (Yes or no)"
+	left_answer = gets.chomp.downcase
+	until left_answer == "yes" || left_answer == "no" 
+		puts "Invalid response please choose yes or no"
+		left_answer = gets.chomp.downcase
+	end 
+	left_answer = front_foot_true_false(left_answer)
+	snowboard_form[:front_foot] = left_answer 
+
+	snowboard_new = Snowboard_Build.new(snowboard_form[:name], snowboard_form[:height], snowboard_form[:style], snowboard_form[:front_foot], snowboard_form[:company]) 
+	snowboards << snowboard_new 
+	
+	p snowboards
+end 
+
+
+
+
+
+
 
