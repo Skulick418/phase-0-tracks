@@ -3,7 +3,7 @@
 # Create an initiliaze class with parameters needed for each accessor I will be using
 # Assign variables in initialize 
 # Create a description method to be used at the end 
-# Create user interface with loop do break will be quit 
+# Create user interface with loop do, break will be quit 
 # Ask user for their information
 # Collect user information into a hash push that hash into the class then into an array. 
 # Print all information given using .each do method on array. 
