@@ -18,3 +18,6 @@ function reverse(string) {
 	return new_string
 }
 
+// DRIVER CODE 
+var name_one = reverse("hello")
+console.log(name_one)
