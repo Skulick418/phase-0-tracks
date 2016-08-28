@@ -20,4 +20,6 @@ function reverse(string) {
 
 // DRIVER CODE 
 var name_one = reverse("hello")
-console.log(name_one)
+if (1 != 2) {
+	console.log(name_one);
+	}
