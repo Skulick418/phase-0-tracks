@@ -21,7 +21,7 @@
 	console.log(longestString);
 	}
 
-	longString(["Sam", "Schneia"])
+	longString(["Sam", "Schneia"]) // => "Schneia"
 	
 
 
@@ -60,3 +60,29 @@ var set3 = {car: "Ford", name: "Tom", age: 22 };
 
 Match(set2, set3) // => False 
 Match(set1, set2) // => True 
+
+//PSUEDOCODE
+//RELEASE 2: Create a function that takes an integer for length and returns an array of strings of the given length.
+	// create a function that takes an integer as the parameter 
+		// create two variables. One will list all the possible letters it can chose from the other will be an array with the parameter in it
+		// loop through the array variable. 
+			// have the parameter being looped be equal to the possible letter variable. Use substr command and Math.random command to randomly pick which letter will be taken.
+				//substr will pick and return the character the math.random will pick a random index numbre to recieve the .substr
+			// print the new array 
+	// Run driver code
+
+function numtoarray(integer) {
+	var letters = "abcdefghijklmnopqrstuvwxyz"
+	var lengtharray = [integer]
+
+	for (var i = 0; i < int; i++) {
+		lengtharray[i] = letter.substr(Math.floor(Math.random() * 14) + 2);
+		console.log(lengtharray);
+	}
+
+
+}
+
+// Stumped on how to get past this part :/
+
+
