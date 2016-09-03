@@ -46,12 +46,29 @@ answer = gets.chomp.downcase
  	puts "Please type in the changed information"
  	if answer == :age 
  		new_value = gets.chomp.to_i
+ 	
  	elsif answer == :child_amount
  		new_value = gets.chomp.to_i
- 	else 
+ 	
+ 	elsif answer == :fish_tank
+ 		puts "Will a fish tank be added?"
+ 		new_value = gets.chomp.downcase 
+ 		until new_value == true || new_value == false
+ 			if new_value == "yes"
+				new_value = true 
+			elsif new_value == "no"
+			new_value = false 
+			else 
+			puts "Please type in yes or no."
+			new_value = gets.chomp.downcase
+			end
+		end 
+	else 
  		new_value = gets.chomp 
  	end 
- 	list[answer] = new_value 
+ 	new_value = answer
+ 	list[new_value]
+ 	# list[answer] = new_value 
  end 
 
  p list 
