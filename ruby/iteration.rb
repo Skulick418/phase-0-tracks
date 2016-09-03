@@ -1,3 +1,4 @@
+# Release One
 def talk
 	puts "Hello my name is....."
 	yield ("Sam")
@@ -20,5 +21,18 @@ fruits.map! do |x|
 	puts "I like to eat #{x}'s"
 end
 	
-end 
-p fruit_salad
+sports = {"hockey" => 1, "soccer" => 2, "baseball" => 3, "volleyball" => 4}
+
+sports.each do |key, value|
+puts "#{key} is my number #{value} sport!"
+end
+
+p sports
+# Release Two
+# Array 1 
+
+ farm_animals = ["pig","cow","chicken","goat"]
+
+ farm_animals.delete_if {|animal| animal == "pig"}
+
+ p farm_animals
