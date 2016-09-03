@@ -72,5 +72,6 @@ answer = gets.chomp.downcase
  end 
 
  p list 
+ puts "Goodbye!"
 
 
