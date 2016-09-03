@@ -36,3 +36,25 @@ p sports
  farm_animals.delete_if {|animal| animal == "pig"}
 
  p farm_animals
+
+ # Hash 1
+
+ sports = {"football" => 1, "soccer" => 2, "baseball" => 3, "volleyball" => 4}
+
+sports.delete_if {|key, value| value < 3 } 
+
+p sports 
+
+# Array 2 
+
+ farm_animals = ["pig","cow","chicken","goat"]
+ farm_animals.keep_if {|x| x == "goat"}
+ p farm_animals
+
+# Hash 2 
+
+ sports = {"football" => 1, "soccer" => 2, "baseball" => 3, "volleyball" => 4}
+
+ sports.keep_if {|key, value| value < 3 }
+
+ p sports 
