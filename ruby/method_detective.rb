@@ -4,10 +4,10 @@
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
 
-# "iNvEsTiGaTiOn".<???>
+ "iNvEsTiGaTiOn".swapcase
 # => “InVeStIgAtIoN”
 
-# "zom".<???>
+"zom".insert(2,"o")
 # => “zoom”
 
 # "enhance".<???>
