@@ -17,6 +17,7 @@ p "enhance".center(15)
 # => "STOP! YOU’RE UNDER ARREST!"
 
 p "the usual".replace("the usual suspects")
+
 #=> "the usual suspects"
 
 " suspects".replace("the usual suspects")
