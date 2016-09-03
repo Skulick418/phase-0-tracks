@@ -80,3 +80,4 @@ snowboard_types = {
 puts snowboard_types[:Freestyle][:Burton][:Size][0..1]
 puts snowboard_types[:All_terain][:Forum][:Goofy_option]
 puts snowboard_types[:Freestyle][:Burton][:Sale]
+puts snowboard_types[:Freestyle][:Forum][:Sale]
