@@ -13,7 +13,7 @@ puts "Welcome to the interior design manipulator 3000!"
 puts "Please, let's begin...."
 
 puts "Please tell me the client's full name (first name, last name)"
-list[:name] = gets.chomp.to_s 
+list[:name] = gets.chomp
 
 puts "Please tell me the client's age"
 list[:age] = gets.chomp.to_i 
@@ -22,7 +22,7 @@ puts "Please tell me the amount of children the client has"
 list[:child_amount] = gets.chomp.to_i
 
 puts "Please tell me if a fish tank will be added (yes/no)"
-fish_tank_input = gets.chomp.downcase.to_s 
+fish_tank_input = gets.chomp.downcase
 until list[:fish_tank] == true || list[:fish_tank] == false
 	if fish_tank_input == "yes"
 		list[:fish_tank] = true 
@@ -35,7 +35,7 @@ until list[:fish_tank] == true || list[:fish_tank] == false
 end 
 
 puts "Please tell me the decor theme"
-list[:decor_theme] = gets.chomp.to_s
+list[:decor_theme] = gets.chomp
 
 #UPDATER 
 
@@ -66,9 +66,8 @@ answer = gets.chomp.downcase
 	else 
  		new_value = gets.chomp 
  	end 
- 	new_value = answer
- 	list[new_value]
- 	# list[answer] = new_value 
+ 
+ 	list[answer] = new_value 
  end 
 
  p list 
