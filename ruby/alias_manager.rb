@@ -6,7 +6,12 @@
 	# Create vowel exception array 
 	# Iteriate through each parmeter in the method if it has a vowel array in it then that character moves to the next vowel in the vowel array. 
 	# Create empty array that the new word will be moved into 
-	
+# Create consonant exceptions and follow same steps as from vowels
+# Create user interface breaking the name down to two questions that will then be combined.
+# Store original name in a variable
+# Take those variables and move them into a new variable stating what their old and new name are
+# Move those variables into a new array
+# Iteriate through that array stating each spys old and new name. 
 def user_flip(name)
 	name = name.split.reverse.join.chars
 	new_name = Array.new 
@@ -34,7 +39,8 @@ new_user_list = []
 loop do  
 puts "What is the first name? (Type exit to terminate program)"
 first_name = gets.chomp
-break if first_name == "exit" || break if first_name == "Exit"
+break if first_name == "exit" 
+break if first_name == "Exit"
 new_first_name = user_flip(first_name)
 puts "What is the last name?"
 last_name = gets.chomp 
@@ -42,7 +48,11 @@ new_last_name = user_flip(last_name)
 name_history = "#{first_name} #{last_name} is now #{new_first_name} #{new_last_name}"
 new_user_list << name_history 
 end 
-p new_user_list
+
+new_user_list.each do |x|
+	puts "Spy list: #{x}"
+end 
+	
 
 
 
