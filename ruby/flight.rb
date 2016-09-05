@@ -1,20 +1,42 @@
 module Flight
-  def take_off(altitude)
-    puts "Taking off and ascending until reaching #{altitude} ..."
-  end
+	def take_off(altitude)
+		puts "Taking off and ascending until reaching #{altitude} ..."
+	end
 end
 
-
 class Bird
-	include Flight 
+	include Flight
 end
 
 class Plane
-	include Flight 
+	include Flight
 end
 
-bird = Bird.new
-bird.take_off(800)
+hawk = Bird.new 
+
+hawk.take_off(800)
 
 plane = Plane.new
-plane.take_off(3000)
+plane.take_off(40000)
+
+
+# module Flight
+#   def take_off(altitude)
+#     puts "Taking off and ascending until reaching #{altitude} ..."
+#   end
+# end
+
+
+# class Bird
+# 	include Flight 
+# end
+
+# class Plane
+# 	include Flight 
+# end
+
+# bird = Bird.new
+# bird.take_off(800)
+
+# plane = Plane.new
+# plane.take_off(3000)
