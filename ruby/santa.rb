@@ -40,6 +40,12 @@ p santa.get_mad_at("Vixen")
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
+20.times do |x|
+	puts "Santa number #{x + 1}"
+	santa_1 = Santa.new(example_genders.sample, example_ethnicities.sample)
+	p santa_1
+	p santa_1.celebrate_birthday(rand(140))
+end 
 # class Santa
 # attr_reader :ethnicity, :age 
 # attr_accessor :gender  
