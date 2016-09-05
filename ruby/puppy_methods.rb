@@ -1,59 +1,38 @@
-# Type: Puppy
-# Fur: Long
-# Breed: Poodle 
-# Name: Fluffy
-# Color: White
-# Behavior: Active
-# Intelect: High 
-# Tricks: Roll over, sit, stay, play dead. 
 
-class Puppy 
-end 
-# p Puppy.methods
-duchess = Puppy.new
-fido = Puppy.new
-spot = Puppy.new
+class Puppy
 
-# p spot.class
-# p duchess == fido
-# p fido.instance_of?(Array)
-# p fido.instance_of?(Puppy)
-# p spot.play_dead
-
-# class Puppy
-
-#   def fetch(toy)
-#     puts "I brought back the #{toy}!"
-#     toy
-#   end
+  def fetch(toy)
+    puts "I brought back the #{toy}!"
+    toy
+  end
   
-#   def bark(x) 
-#     x.to_i.times {puts "woof"} 
-#   end 
+  def bark(x) 
+    x.to_i.times {puts "woof"} 
+  end 
   
-#   def roll_over 
-#     puts "roll over"
-#   end 
+  def roll_over 
+    puts "roll over"
+  end 
   
-#   def dog_years(x)
-#     age_conversion = x.to_i * 7 
-#     puts "#{x} is #{age_conversion} in dog years"
-#   end 
+  def dog_years(x)
+    age_conversion = x.to_i * 7 
+    puts "#{x} is #{age_conversion} in dog years"
+  end 
   
-#   def friend(dog_name)
-#     puts "#{dog_name} is my friend"
+  def friend(dog_name)
+    puts "#{dog_name} is my friend"
     
-#   def initialize 
-#     puts "Initializing new puppy instance ..."
-#   end 
+  def initialize 
+    puts "Initializing new puppy instance ..."
+  end 
 
-# end 
-# end 
+end 
+end 
 
 
 
-# dax = Puppy.new 
-# dax.fetch('ball')
+dax = Puppy.new 
+dax.fetch('ball')
 
 # dax.bark(5)
 
