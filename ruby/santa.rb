@@ -7,11 +7,12 @@ class Santa
 		@gender = gender 
 		@ethnicity = ethnicity 
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-		@age = 0 
+		@age = 0
 	end 
 
 	def celebrate_birthday(age)
 		@age = age + 1 
+		@age 
 	end
 	def get_mad_at(reindeer)
 		@reindeer_ranking.delete(reindeer)
@@ -43,8 +44,8 @@ example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer n
 20.times do |x|
 	puts "Santa number #{x + 1}"
 	santa_1 = Santa.new(example_genders.sample, example_ethnicities.sample)
+	santa_1.celebrate_birthday(rand(140))
 	p santa_1
-	p santa_1.celebrate_birthday(rand(140))
 end 
 # class Santa
 # attr_reader :ethnicity, :age 
