@@ -6,21 +6,37 @@
 	# Make a finished variable set to false
 
 class Wordgame 
+	attr_reader :guess_left 
 	def initialize 
 		puts "User one please pick a word. User two please look away."
 		@word_choice = gets.chomp.downcase
-		puts "User 2 please guess a letter out of the word User one selected."
-		@letter_choice = gets.chomp.downcase
-		@guess_left = @word_choice.length + 3 
+		@letter_choice = " "
+		@guess_left = @word_choice.length.to_i + 3 
 	end 
 
 	def guess
+		guesses = []
+		until @guess_left == 0
+		puts "User two please guess a letter from the word User one selected." 
+		@letter_choice = gets.chomp.downcase 
+		guesses.each do |x|
+			if @letter_choice == x 
+				until @letter_choice != x  
+			puts "Please pick a letter you haven't selected"
+			@letter_choice = gets.chomp.downcase 
+		end 
+		end
+		end 
 		word_array = @word_choice.chars 
 		if word_array.include?(@letter_choice) 
 			puts true 
 		else 
 			puts false 
-		end 
+		end  
+		guesses << @letter_choice 
+		@guess_left -= 1 
+	end 
+	p guesses 
 	end 
 end 
 
