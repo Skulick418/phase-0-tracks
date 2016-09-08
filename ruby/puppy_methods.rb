@@ -42,29 +42,29 @@ dax.fetch('ball')
 
 # dax.friend('spot')
 
-# class Sports 
+class Sports 
    
-#     def initialize 
-#       puts "Initializing new puppy instance ..."
-#       end 
+    def initialize 
+      puts "Initializing new puppy instance ..."
+      end 
       
-#       def favorite_sport(choice)
-#         puts "#{choice} is my favorite sport."
-#       end 
+      def favorite_sport(choice)
+        puts "#{choice} is my favorite sport."
+      end 
       
-#       def least_favorite_sport(choice2)
-#         puts "#{choice2} is my least favorite sport" 
-#       end 
+      def least_favorite_sport(choice2)
+        puts "#{choice2} is my least favorite sport" 
+      end 
         
-# end 
+end 
 
-# sports_list = []
+sports_list = []
 
-# 50.times do 
-#   sports_list.push(Sports.new)
-# end 
+50.times do 
+  sports_list.push(Sports.new)
+end 
 
-# sports_list.each do |index|
-#   index.favorite_sport('Hockey')
-#   index.least_favorite_sport('Golf')
-# end 
+sports_list.each do |index|
+  index.favorite_sport('Hockey')
+  index.least_favorite_sport('Golf')
+end 
