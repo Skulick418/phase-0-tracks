@@ -21,7 +21,7 @@
 	console.log(longestString);
 	}
 
-	longString(["Sam", "Schneia"]) // => "Schneia"
+	longString(["Sam", "Schneia"]) // =>  "Schneia"
 	
 
 
